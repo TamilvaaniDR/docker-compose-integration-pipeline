@@ -14,7 +14,7 @@ services:
       - "27017:27017"
 
   test:
-    build: ./backend
+    build: ./tests   # ✅ FIXED
     command: npm test
     depends_on:
       - backend

@@ -1,10 +1,7 @@
-const request = require("supertest");
-const app = require("../server"); // important
+const axios = require("axios");
 
-describe("Health Check", () => {
-  it("should return status ok", async () => {
-    const res = await request("http://backend:5000/health");
-    expect(res.statusCode).toBe(200);
-    expect(res.body.status).toBe("ok");
-  });
+test("Backend health check", async () => {
+  const res = await axios.get("http://backend:5000/health");
+  expect(res.status).toBe(200);
+  expect(res.data.status).toBe("ok");
 });
