@@ -1,19 +1,21 @@
-version: "3.8"
-
 services:
   backend:
     build: ./backend
-    container_name: task-backend
     ports:
       - "5000:5000"
-    environment:
-      - MONGO_URI=mongodb://db:27017/taskdb
-      - PORT=5000
     depends_on:
-      - db
+      - mongo
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/taskdb
 
-  db:
+  mongo:
     image: mongo
-    container_name: task-mongo
     ports:
       - "27017:27017"
+
+  test:
+    build: ./backend
+    command: npm test
+    depends_on:
+      - backend
+      - mongo
