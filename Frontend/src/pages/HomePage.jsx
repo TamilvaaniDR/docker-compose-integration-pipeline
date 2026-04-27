@@ -10,7 +10,7 @@ function HomePage() {
       <div className="relative mx-auto flex min-h-screen w-full max-w-6xl flex-col px-5 py-8 sm:px-8">
         <header className="fade-in-up flex items-center justify-between">
           <h1 className="text-lg font-semibold tracking-tight text-white sm:text-xl">
-            Task Manager
+            Task Manager 💪💪
           </h1>
           <Link
             to="/tasks"
