@@ -115,7 +115,7 @@ function DashboardPage() {
       });
       upsertTask(updatedTask.data);
     } catch (err) {
-      setError('Could not update task.');
+      setError('Couldn\'t update task.');
     }
   };
 
