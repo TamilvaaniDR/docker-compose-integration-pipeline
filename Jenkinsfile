@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+
         stage('Clone') {
             steps {
                 git 'https://github.com/TamilvaaniDR/docker-compose-integration-pipeline'
@@ -17,8 +18,20 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'docker compose run test'
+                sh 'docker compose run --rm test'
             }
+
+            post {
+                always {
+                    junit 'tests/junit.xml'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            sh 'docker compose down --remove-orphans'
         }
     }
 }

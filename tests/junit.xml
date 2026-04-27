@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="1.616">
+  <testsuite name="Task API Integration Test" errors="0" failures="0" skipped="0" timestamp="2026-04-27T18:13:58" time="1.143" tests="2">
+    <testcase classname="Task API Integration Test should create a task" name="Task API Integration Test should create a task" time="0.119">
+    </testcase>
+    <testcase classname="Task API Integration Test should get tasks" name="Task API Integration Test should get tasks" time="0.036">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2026-04-27T18:13:59" time="0.319" tests="1">
+    <testcase classname=" Backend health check" name=" Backend health check" time="0.118">
+    </testcase>
+  </testsuite>
+</testsuites>

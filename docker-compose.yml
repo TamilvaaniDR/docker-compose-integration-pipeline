@@ -18,6 +18,10 @@ services:
     depends_on:
       - backend
       - mongo
+    volumes:
+      - ./tests:/app
+      - test-node-modules:/app/node_modules
 
 volumes:
   mongo-data:
+  test-node-modules:
