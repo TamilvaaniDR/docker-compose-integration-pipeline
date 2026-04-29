@@ -28,7 +28,7 @@ function HomePage() {
               </p>
               <h2 className="text-balance text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
                 Plan fast.
-                <span className="hero-gradient-text"> Focus deeper.</span> Ship better.
+                <span className="hero-gradient-text"> Focus deep.</span> Ship better.
               </h2>
               <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-slate-200 sm:text-lg">
                 A sleek workspace to capture, track, and complete tasks with clarity. Built for
